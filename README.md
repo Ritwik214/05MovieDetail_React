@@ -1,70 +1,32 @@
-# Getting Started with Create React App
+1. React Basics:
+JSX (JavaScript XML):
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Explanation: JSX is a syntax extension for JavaScript recommended by React. It looks similar to XML/HTML and is used with React to describe what the UI should look like.
+Functional Components and Hooks:
 
-## Available Scripts
+Explanation: React components can be functional or class-based. In this project, functional components are used, and useState and useEffect are hooks that manage state and side effects in functional components.
+2. React Router:
+BrowserRouter, Route, and Routes:
 
-In the project directory, you can run:
+Explanation: React Router is used for navigation in a React application. BrowserRouter is the router component that uses HTML5 history API. Route is used to declare routes, and Routes is a container for multiple Route components.
+Route Parameters (:movieId):
 
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Explanation: Parameters in routes are used to capture dynamic values from the URL. In this project, :movieId is a route parameter used in the path to identify a specific movie.
+3. API Integration:
+Axios for HTTP Requests:
+Explanation: Axios is a library used for making HTTP requests. In this project, it's used to fetch data from The Movie Database (TMDb) API.
+4. State Management:
+useState and useEffect Hooks:
+Explanation: useState is used to declare state variables in functional components, and useEffect is used to perform side effects in functional components, such as data fetching.
+5. Project Structure:
+Folder Structure (src/components, api.js):
+Explanation: Organizing your project into folders like components and api helps maintain a clean and modular structure. api.js contains functions for interacting with the TMDb API.
+6. Conditional Rendering:
+Conditional Rendering in MovieDetail.js:
+Explanation: The if (!movie) statement in MovieDetail.js checks whether the movie data has been fetched. If not, it displays a loading message.
+7. Error Handling:
+Try-Catch Blocks in API Requests:
+Explanation: The try-catch blocks in the API functions (getPopularMovies and getMovieDetails) handle errors during the HTTP requests. If an error occurs, it's logged to the console.
+8. React-Router Version 6:
+Routes instead of Switch:
+Explanation: React Router version 6 introduces the Routes component as a replacement for the previous Switch component. It provides a more declarative way to define routes.
